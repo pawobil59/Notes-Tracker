@@ -27,5 +27,6 @@ urlpatterns = [
     path("api/token/", TokenObtainPairView.as_view(), name="get_token"), #view to obtain token
     path("api/token/refresh/", TokenRefreshView.as_view(), name="refresh"), #view to refresh token
     path("api-auth/", include("rest_framework.urls")),
+    path("api/", include("api.urls")), #forward all urls that aren't included above to api.urls file
 
 ]
