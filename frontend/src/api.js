@@ -4,7 +4,7 @@
 import axios from "axios"
 import { ACCESS_TOKEN } from "./constants"
 
-//load an environment variable inside javascriot code
+//load an environment variable inside javascript code
 //start with key word "VITE" followed by the variable name 
 const api = axios.create({
     baseURL: import.meta.env.VITE_API_URL
