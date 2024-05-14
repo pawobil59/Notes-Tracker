@@ -12,7 +12,7 @@ const apiUrl = "/choreo-apis/notetracker/backend/rest-api-be2/v1"
 
 //
 const api = axios.create({
-    baseURL: apiUrl
+    baseURL: apiUrl,
 })
 
 api.interceptors.request.use(
